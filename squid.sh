@@ -41,7 +41,7 @@ make install
 cd /etc/squid
 rm -rf squid.conf
 #wget http://120.55.112.31/squid/squid.conf
-cp /squid/squid.conf /etc/squid/squid.conf
+cp /root/squid/squid.conf /etc/squid/squid.conf
 
 chmod 777 /usr/var/logs/
 squid
