@@ -1,4 +1,7 @@
 #!/bin/bash
+#Debian8 linode56
+
+
 www=$1
 
 apt-get update
@@ -32,6 +35,15 @@ wget http://www.squid-cache.org/Versions/v3/3.5/squid-3.5.7.tar.bz2
 #wget http://120.55.112.31/CA/90hou.store.crt
 #wget http://120.55.112.31/CA/90hou.store.key
 
+# service serverSpeeder start #启动
+# service serverSpeeder stop #停止
+# service serverSpeeder reload #重新加载配置
+# service serverSpeeder restart #重启
+# service serverSpeeder status #状态
+# service serverSpeeder stats #统计
+# service serverSpeeder renewLic #更新许可文件
+# service serverSpeeder update #更新
+
 tar jxvf squid-3.5.7.tar.bz2  
 cd squid-3.5.7  
 ./configure --prefix=/usr --sysconfdir=/etc/squid --libdir=/usr/lib --with-openssl --enable-basic-auth-helpers="LDAP,MSNT,NCSA,PAM,SASL,SMB,YP,DB,POP3,getpwnam,squid_radius_auth,multi-domain-NTLM" --with-swapdir=/var/spool/squid --libexecdir=/usr/lib/squid
@@ -46,9 +58,9 @@ cp /root/squid/squid.conf /etc/squid/squid.conf
 chmod 777 /usr/var/logs/
 squid
 
-curl -sL https://deb.nodesource.com/setup_6.x |  bash -
-apt-get install -y nodejs
-npm install forever -gd
+# curl -sL https://deb.nodesource.com/setup_6.x |  bash -
+# apt-get install -y nodejs
+# npm install forever -gd
 service  stunnel4  start
 
 
