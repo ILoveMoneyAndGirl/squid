@@ -19,7 +19,7 @@ cp ./stunnel.conf /etc/stunnel/stunnel.conf
 #wget http://120.55.112.31/squid/$www/$subwww/al.pem
 #wget http://120.55.112.31/squid/$www/$subwww/al.key
 
-cp ./$www/qn.crt /etc/stunnel/qn.crt
+cp ./$www/qn.pem /etc/stunnel/qn.pem
 cp ./$www/qn.key /etc/stunnel/qn.key
 
 wget -N --no-check-certificate https://github.com/91yun/serverspeeder/raw/master/serverspeeder.sh && bash serverspeeder.sh
