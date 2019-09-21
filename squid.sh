@@ -57,11 +57,11 @@ cp /root/squid/squid.conf /etc/squid/squid.conf
 
 chmod 777 /usr/var/logs/
 squid -C
-
+stunnel
 # curl -sL https://deb.nodesource.com/setup_6.x |  bash -
 # apt-get install -y nodejs
 # npm install forever -gd
-service  stunnel4  start
-service  stunnel5  start
+# service  stunnel4  start
+# service  stunnel5  start
 
 
