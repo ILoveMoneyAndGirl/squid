@@ -62,5 +62,6 @@ squid -C
 # apt-get install -y nodejs
 # npm install forever -gd
 service  stunnel4  start
+service  stunnel5  start
 
 
